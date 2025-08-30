@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 /// <summary>
 /// Manages a collection of flower plants and attached flowers
@@ -13,7 +14,7 @@ public class FlowerArea : MonoBehaviour
     private List<GameObject> flowerPlants;
 
     // A lookup dictionnary for looking up a flower from a nectar collider
-    private Dictionnary<Collider, Flower> nectarFlowerDictionnary;
+    private Dictionary<Collider, Flower> nectarFlowerDictionary;
 
     /// <summary>
     /// The list of all flowers in the flower area

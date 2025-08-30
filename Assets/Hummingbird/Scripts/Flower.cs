@@ -86,7 +86,7 @@ public class Flower : MonoBehaviour
             nectarCollider.gameObject.SetActive(false);
 
             // Change the flower color to indicate that it is empty
-            flowerMaterial.color.SetColor("_BaseColor", emptyFlowerColor);
+            flowerMaterial.SetColor("_BaseColor", emptyFlowerColor);
         }
 
         // Return the amount of nectar that was taken
@@ -107,7 +107,7 @@ public class Flower : MonoBehaviour
         nectarCollider.gameObject.SetActive(true);
 
         // Change the flower color to indicate that it is full
-        flowerMaterial.color.SetColor("_BaseColor", fullFlowerColor);
+        flowerMaterial.SetColor("_BaseColor", fullFlowerColor);
     }
 
 
